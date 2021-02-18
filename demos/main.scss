@@ -1,0 +1,76 @@
+@charset 'utf-8';
+
+// ----------------------------------------------------
+// Fonts
+// ----------------------------------------------------
+$title-font: 'Montserrat', Helvetica, Arial, sans-serif;
+$text-font: 'Montserrat', Helvetica, Arial, sans-serif;
+
+// ----------------------------------------------------
+// Media Queries
+// ----------------------------------------------------
+$phone: 'screen and (min-width: 15em) and (max-width: 47em)';
+$tablet: 'screen and (min-width: 47em) and (max-width: 61em)';
+$desktop: 'screen and (min-width: 61em)';
+$phone-landscape: 'screen and (min-height: 15em) and (max-height: 35em)';
+
+// ----------------------------------------------------
+// Text sizes
+// ----------------------------------------------------
+$base-size: 15pt;
+$huge-title: 6.854em;
+$big-title: 4.236em;
+$normal-title: 2.618em;
+$big-text: 1.518em;
+$small-text: 0.618em;
+$quote-text: 1.2em;
+
+// ----------------------------------------------------
+// Text colors
+// ----------------------------------------------------
+$title-color: #fff;
+$title-inverse: #000;
+$link-color: #fff;
+$menu-color: #000;
+$text-color: #666;
+$text-light: #fff;
+
+// ----------------------------------------------------
+// Background colors
+// ----------------------------------------------------
+$page-back: #111;
+$page-light: #fff;
+$menu-back: #fff;
+$menu-light: #000;
+$scrollbars: #fff;
+$text-back: #fff;
+$lightbox: rgba(0, 0, 0, 0.9);
+
+// ----------------------------------------------------
+// Shadow colors
+// ----------------------------------------------------
+$light-shadow: rgba(0, 0, 0, 0.1);
+$mid-shadow: rgba(0, 0, 0, 0.3);
+
+// ----------------------------------------------------
+// Border colors
+// ----------------------------------------------------
+$border-color: rgba(255, 255, 255, 0.2);
+$soft-border: rgba(0, 0, 0, 0.2);
+
+// ----------------------------------------------------
+// Imports
+// ----------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900&display=swap');
+
+@import 'grade/grade';
+@import 'partials/mixins';
+@import 'partials/animations';
+@import 'partials/lightboxes';
+@import 'partials/layout';
+@import 'partials/home';
+@import 'partials/works';
+@import 'partials/work';
+@import 'partials/about';
+@import 'partials/projects';
+@import 'partials/contact';
