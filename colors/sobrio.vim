@@ -1,8 +1,7 @@
 " Vim color file
 " Author: Elves Sousa
 " Website: elvessousa.com.br
-" Colorscheme Name: elf_sobrio
-" Inspired by https://www.monokai.pro/
+" Colorscheme Name: sobrio
 
 set background=dark
 highlight clear
@@ -12,7 +11,7 @@ if exists("syntax_on")
 endif
 
 set t_Co=256
-let g:colors_name = "elf_sobrio"
+let g:colors_name = "sobrio"
 
 " Color palette
 " Interface
