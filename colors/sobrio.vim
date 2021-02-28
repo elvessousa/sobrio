@@ -135,11 +135,20 @@ call s:HL("DiffText", 231, 24, s:b, s:id, s:lightest)
 
 " HTML 
 call s:HL("htmlArg", 'NONE', 'NONE', s:i, 'NONE', s:arg)
-call s:HL("htmlArg", 81, 'NONE', 'NONE', 'NONE', s:id)
 call s:HL("htmlEndTag", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("htmlSpecialChar", 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:HL("htmlTag", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("htmlTagName", 204, 'NONE', 'NONE', 'NONE', s:word)
+
+" XML
+call s:HL("svgAttr", 'NONE', 'NONE', s:i, 'NONE', s:arg)
+call s:HL("svgElement", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("xmlAttrib", 'NONE', 'NONE', s:i, 'NONE', s:arg)
+call s:HL("xmlDecl", 'NONE', 'NONE', 'NONE', 'NONE', s:id2)
+call s:HL("xmlEqual", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("xmlProcessingDelim", 'NONE', 'NONE', 'NONE', 'NONE', s:prop)
+call s:HL("xmlTag", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("xmlTagName", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 
 " Markdown
 call s:HL("mkdHeading", 'NONE', 'NONE', 'NONE', 'NONE', s:type)
@@ -180,6 +189,11 @@ call s:HL("typescriptObjectLabel", 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 call s:HL("typescriptVariable", 'NONE', 'NONE', s:i, 'NONE', s:id2)
 call s:HL("typescriptVariableDeclaration", 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 
+" JSON
+call s:HL("jsonKeyword", 155, 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL("jsonQuote", 155, 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL("jsonString", 155, 'NONE', 'NONE', 'NONE', 'NONE')
+
 " GraphQL
 call s:HL("graphqlName", 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 
@@ -213,6 +227,7 @@ call s:HL("cssValueLength", 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:HL("scssImport", 155, 'NONE', s:i, 'NONE', s:word)
 call s:HL("scssVariable", 155, 'NONE', s:i, 'NONE', s:id)
 call s:HL("scssSelectorName", 155, 'NONE', s:i, 'NONE', s:arg)
+call s:HL("scssDefinition", 81, 'NONE', s:i, 'NONE', s:word)
 
 " Indented Sass
 call s:HL("sassMedia", 155, 'NONE', s:i, 'NONE', s:word)
