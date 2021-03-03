@@ -258,6 +258,11 @@ call s:HL("cppSTLvariable", 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 " Rust
 call s:HL("rustType", 81, 'NONE', s:i, 'NONE', s:type)
 
+" Elixir
+call s:HL("elixirAtom", 155, 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL("elixirPseudoVariable", 155, 'NONE', s:i, 'NONE', s:var)
+call s:HL("elixirStringDelimiter", 221, 'NONE', 'NONE', 'NONE', s:str)
+
 " Shell Script
 call s:HL("bashStatement", 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL("shStatement", 81, 'NONE', s:i, 'NONE', s:id2)
