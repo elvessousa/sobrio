@@ -138,17 +138,18 @@ call s:HL("htmlArg", 'NONE', 'NONE', s:i, 'NONE', s:arg)
 call s:HL("htmlEndTag", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("htmlSpecialChar", 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:HL("htmlTag", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
-call s:HL("htmlTagName", 204, 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("htmlTagName", 204, 'NONE', s:b, 'NONE', s:word)
 
 " XML
 call s:HL("svgAttr", 'NONE', 'NONE', s:i, 'NONE', s:arg)
-call s:HL("svgElement", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("svgElement", 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL("xmlAttrib", 'NONE', 'NONE', s:i, 'NONE', s:arg)
 call s:HL("xmlDecl", 'NONE', 'NONE', 'NONE', 'NONE', s:id2)
 call s:HL("xmlEqual", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("xmlProcessingDelim", 'NONE', 'NONE', 'NONE', 'NONE', s:prop)
 call s:HL("xmlTag", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
-call s:HL("xmlTagName", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("xmlTagName", 'NONE', 'NONE', s:b, 'NONE', s:word)
+call s:HL("xmlNamespace", 'NONE', 'NONE', s:i, 'NONE', s:word)
 
 " Markdown
 call s:HL("mkdHeading", 'NONE', 'NONE', 'NONE', 'NONE', s:type)
@@ -175,7 +176,8 @@ call s:HL("jsVariableDef", 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 call s:HL("jsxClosePunct", 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL("jsxCloseString", 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL("jsxOpenPunct", 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
-call s:HL("jsxTagName", 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL("jsxTagName", 'NONE', 'NONE', s:b, 'NONE', s:arg)
+call s:HL("jsxComponentName", 'NONE', 'NONE', s:b, 'NONE', s:id2)
 
 " TypeScript
 call s:HL("typescriptBlock", 'NONE', 'NONE', 'NONE', 'NONE', s:title)
@@ -185,13 +187,14 @@ call s:HL("typescriptExport", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("typescriptFuncCallArg", 'NONE', 'NONE', 'NONE', 'NONE', s:type)
 call s:HL("typescriptImport", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("typescriptObjectLabel", 'NONE', 'NONE', 'NONE', 'NONE', s:var)
+call s:HL("typescriptParens", 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL("typescriptVariable", 'NONE', 'NONE', s:i, 'NONE', s:id2)
 call s:HL("typescriptVariableDeclaration", 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 call s:HL("typescriptBraces", 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 
 " JSON
 call s:HL("jsonKeyword", 155, 'NONE', 'NONE', 'NONE', s:arg)
-call s:HL("jsonQuote", 155, 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL("jsonQuote", 155, 'NONE', 'NONE', 'NONE', s:other)
 call s:HL("jsonString", 155, 'NONE', 'NONE', 'NONE', 'NONE')
 
 " GraphQL
@@ -205,9 +208,10 @@ call s:HL("yamlKey", 204, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("yamlBlockMappingKey", 204, 'NONE', s:i, 'NONE', s:arg)
 
 " Cascading Style Sheets
-call s:HL("cssBraces", 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
+call s:HL("cssBraces", 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL("cssClassName", 155, 'NONE', s:i, 'NONE', s:arg)
 call s:HL("cssClassNameDot", 155, 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL("cssCustomProp", 155, 'NONE', 'NONE', 'NONE', s:var)
 call s:HL("cssAtRule", 155, 'NONE', s:i, 'NONE', s:word)
 call s:HL("cssAtKeyword", 155, 'NONE', s:i, 'NONE', s:word)
 call s:HL("cssDefinition", 155, 'NONE', s:i, 'NONE', s:word)
@@ -237,7 +241,7 @@ call s:HL("sassIdChar", 81, 'NONE', s:i, 'NONE', s:id2)
 
 " PHP
 call s:HL("phpInclude", 81, 'NONE', s:i, 'NONE', s:word)
-call s:HL("phpFunction", 81, 'NONE', s:b, 'NONE', s:str2)
+call s:HL("phpFunction", 81, 'NONE', s:b, 'NONE', s:id)
 call s:HL("phpFunctions", 81, 'NONE', s:b, 'NONE', s:arg)
 call s:HL("phpStaticClasses", 81, 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL("phpClass", 81, 'NONE', s:b, 'NONE', s:title)
@@ -250,6 +254,8 @@ call s:HL("pythonClassVar", 155, 'NONE', s:i, 'NONE', s:type)
 
 " C++
 call s:HL("cppStructure", 81, 'NONE', s:i, 'NONE', s:id2)
+call s:HL("cType", 81, 'NONE', s:i, 'NONE', s:id2)
+call s:HL("cParen", 81, 'NONE', 'NONE', 'NONE', s:other)
 call s:HL("cStructure", 81, 'NONE', s:i, 'NONE', s:word)
 call s:HL("cInclude", 81, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("cBlock", 81, 'NONE', s:i, 'NONE', s:type)
@@ -257,6 +263,7 @@ call s:HL("cppSTLvariable", 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 
 " Rust
 call s:HL("rustType", 81, 'NONE', s:i, 'NONE', s:type)
+call s:HL("rustIdentifier", 81, 'NONE', s:b, 'NONE', s:id)
 
 " Elixir
 call s:HL("elixirAtom", 155, 'NONE', 'NONE', 'NONE', s:arg)
