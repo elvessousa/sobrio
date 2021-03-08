@@ -41,7 +41,7 @@ let s:str = '#87afd7'
 let s:str2 = '#7cdce7'
 let s:title = '#eeeeee'
 let s:type = '#afafaf'
-let s:var = '#d7d7ff'
+let s:var = '#cccccc'
 let s:warn = '#fd6389'
 let s:word = '#fd6389'
 
@@ -191,6 +191,7 @@ call s:HL("typescriptParens", 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL("typescriptVariable", 'NONE', 'NONE', s:i, 'NONE', s:id2)
 call s:HL("typescriptVariableDeclaration", 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 call s:HL("typescriptBraces", 'NONE', 'NONE', 'NONE', 'NONE', s:other)
+call s:HL("typescriptEndColons", 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 
 " JSON
 call s:HL("jsonKeyword", 155, 'NONE', 'NONE', 'NONE', s:arg)
