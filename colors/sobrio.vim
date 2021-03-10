@@ -183,6 +183,8 @@ call s:HL("jsxComponentName", 'NONE', 'NONE', s:b, 'NONE', s:id2)
 call s:HL("typescriptBlock", 'NONE', 'NONE', 'NONE', 'NONE', s:title)
 call s:HL("typescriptCastKeyword", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("typescriptExceptions", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("typescriptAssign", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL("typescriptBinaryOp", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("typescriptExport", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL("typescriptFuncCallArg", 'NONE', 'NONE', 'NONE', 'NONE', s:type)
 call s:HL("typescriptImport", 'NONE', 'NONE', 'NONE', 'NONE', s:word)
@@ -269,8 +271,13 @@ call s:HL("rustIdentifier", 81, 'NONE', s:b, 'NONE', s:id)
 " Elixir
 call s:HL("elixirAtom", 155, 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL("elixirPseudoVariable", 155, 'NONE', s:i, 'NONE', s:var)
+call s:HL("elixirVariable", 155, 'NONE', s:i, 'NONE', s:var)
 call s:HL("elixirStringDelimiter", 221, 'NONE', 'NONE', 'NONE', s:str)
+call s:HL("elixirTupleDelimiter", 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 
 " Shell Script
 call s:HL("bashStatement", 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL("shStatement", 81, 'NONE', s:i, 'NONE', s:id2)
+
+" Vim Script
+call s:HL("vimVar", 81, 'NONE', s:i, 'NONE', s:var)
