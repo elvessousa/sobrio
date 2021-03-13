@@ -1,6 +1,6 @@
 " Vim color file
 " Author: Elves Sousa
-" Website: elvessousa.com.br
+" Website: https://elvessousa.com.br
 " Colorscheme Name: sobrio
 
 set background=dark
@@ -280,4 +280,6 @@ call s:HL("bashStatement", 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL("shStatement", 81, 'NONE', s:i, 'NONE', s:id2)
 
 " Vim Script
+call s:HL("vimUserFunc", 81, 'NONE', s:i, 'NONE', s:arg)
+call s:HL("vimIsCommand", 81, 'NONE', s:i, 'NONE', s:arg)
 call s:HL("vimVar", 81, 'NONE', s:i, 'NONE', s:var)
