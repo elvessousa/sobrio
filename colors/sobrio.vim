@@ -283,3 +283,7 @@ call s:HL('shStatement', 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL('vimUserFunc', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('vimIsCommand', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('vimVar', 81, 'NONE', s:i, 'NONE', s:var)
+
+" Help
+call s:HL('helpExample', 81, 'NONE', s:i, 'NONE', s:arg)
+call s:HL('helpCommand', 81, 'NONE', s:i, 'NONE', s:word)
