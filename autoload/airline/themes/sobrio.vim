@@ -15,7 +15,7 @@ let s:Inactive = ['#4e4e4e', '#1c1c1c', 239, 234, '']
 let s:Insert = ['#000000', '#fd6389', 17, 45]
 let s:InsertPaste = [s:Insert[0], '#d78700', s:Insert[2], 172, '']
 let s:Normal = ['#000000', '#d7af87', 17, 190]
-let s:Replace = [s:Insert[0], '#af0000', s:Insert[2] , 124, '']
+let s:Replace = [s:Insert[0], '#fd6388', s:Insert[2] , 124, '']
 let s:Visual = ['#000000', '#87afd7', 232, 214]
 
 " Modified file status test

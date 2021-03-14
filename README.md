@@ -82,4 +82,25 @@ colorscheme sobrio
 
 ![C++](./images/cpp.png)
 
+## Airline theme
+
+![Normal](./images/airline/normal.jpg)
+![Insert](./images/airline/insert.jpg)
+![Visual](./images/airline/visual.jpg)
+![Command](./images/airline/command.jpg)
+![Replace](./images/airline/replace.jpg)
+
+### Installation
+
+1. Copy the `./autoload/airline/themessobrio.vim` file to your NVIM airline themes directory, usually `~/.config/nvim/autoload/airline/themes/`
+2. Set the color scheme: `:AirlineTheme sobrio`.
+
+### Setting it as your default
+
+If you want to make your default Airline theme, add this to your `init.vim`:
+
+```vim
+let g:airline_theme='sobrio'
+```
+
 Take cake!
