@@ -36,7 +36,7 @@ colorscheme sobrio
 
 ### React
 
-![JavaScript](./images/jsx-tsx.png)
+![JavaScript](./images/jsx.png)
 
 ### CSS
 
