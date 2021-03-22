@@ -165,6 +165,8 @@ call s:HL('htmlH6', 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL('htmlItalic', 'NONE', 'NONE', s:i, 'NONE', s:type)
 call s:HL('htmlBold', 'NONE', 'NONE', s:b, 'NONE', s:type)
 call s:HL('mkdRule', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
+call s:HL('mkdBold', 'NONE', 'NONE', s:b, 'NONE', s:muted)
+call s:HL('mkdItalic', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
 call s:HL('mkdLink', 'NONE', 'NONE', s:u, 'NONE', s:str2)
 
 " JavaScript
