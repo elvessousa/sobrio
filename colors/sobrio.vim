@@ -122,13 +122,13 @@ call s:HL('TabLine', 231, 204, 'NONE', s:menu, s:other)
 call s:HL('TabLineSel', 231, 204, s:b, s:bg, s:arg)
 
 "  Netrw File Browser
-call s:HL('netrwTreeBar', 231, 204, 'NONE', 'NONE', s:bg)
 call s:HL('netrwClassify', 231, 204, 'NONE', 'NONE', s:lineNumber)
+call s:HL('netrwExe', 242, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('netrwLink', 231, 204, 'NONE', 'NONE', s:muted)
+call s:HL('netrwPlain', 242, 'NONE', 'NONE', 'NONE', s:file)
 call s:HL('netrwSlash', 231, 204, 'NONE', s:bg, s:bg)
 call s:HL('netrwSymLink', 231, 204, s:i, 'NONE', s:id2)
-call s:HL('netrwPlain', 242, 'NONE', 'NONE', 'NONE', s:file)
-call s:HL('netrwExe', 242, 'NONE', 'NONE', 'NONE', s:word)
+call s:HL('netrwTreeBar', 231, 204, 'NONE', 'NONE', s:bg)
 
 " Diffs
 call s:HL('DiffAdd', 231, 155, s:b, 'NONE', s:arg)
@@ -149,13 +149,13 @@ call s:HL('svgElement', 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL('xmlAttrib', 'NONE', 'NONE', s:i, 'NONE', s:arg)
 call s:HL('xmlDecl', 'NONE', 'NONE', 'NONE', 'NONE', s:id2)
 call s:HL('xmlEqual', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
+call s:HL('xmlNamespace', 'NONE', 'NONE', s:i, 'NONE', s:word)
 call s:HL('xmlProcessingDelim', 'NONE', 'NONE', 'NONE', 'NONE', s:prop)
 call s:HL('xmlTag', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('xmlTagName', 'NONE', 'NONE', s:b, 'NONE', s:word)
-call s:HL('xmlNamespace', 'NONE', 'NONE', s:i, 'NONE', s:word)
 
 " Markdown
-call s:HL('mkdHeading', 'NONE', 'NONE', 'NONE', 'NONE', s:type)
+call s:HL('htmlBold', 'NONE', 'NONE', s:b, 'NONE', s:type)
 call s:HL('htmlH1', 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL('htmlH2', 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL('htmlH3', 'NONE', 'NONE', s:b, 'NONE', s:word)
@@ -163,11 +163,11 @@ call s:HL('htmlH4', 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL('htmlH5', 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL('htmlH6', 'NONE', 'NONE', s:b, 'NONE', s:word)
 call s:HL('htmlItalic', 'NONE', 'NONE', s:i, 'NONE', s:type)
-call s:HL('htmlBold', 'NONE', 'NONE', s:b, 'NONE', s:type)
-call s:HL('mkdRule', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
 call s:HL('mkdBold', 'NONE', 'NONE', s:b, 'NONE', s:muted)
+call s:HL('mkdHeading', 'NONE', 'NONE', 'NONE', 'NONE', s:type)
 call s:HL('mkdItalic', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
 call s:HL('mkdLink', 'NONE', 'NONE', s:u, 'NONE', s:str2)
+call s:HL('mkdRule', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
 
 " JavaScript
 call s:HL('jsExport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
@@ -178,14 +178,14 @@ call s:HL('jsTemplateExpression', 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 call s:HL('jsVariableDef', 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 
 " JSX
+call s:HL('jsxBraces', 'NONE', 'NONE', 'NONE', 'NONE', s:id)
 call s:HL('jsxClosePunct', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL('jsxCloseString', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
-call s:HL('jsxOpenPunct', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
-call s:HL('jsxTagName', 'NONE', 'NONE', s:b, 'NONE', s:arg)
 call s:HL('jsxComponentName', 'NONE', 'NONE', s:b, 'NONE', s:id2)
 call s:HL('jsxExpressionBlock', 'NONE', 'NONE', 'NONE', 'NONE', s:id)
+call s:HL('jsxOpenPunct', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL('jsxTag', 'NONE', 'NONE', 'NONE', 'NONE', s:id)
-call s:HL('jsxBraces', 'NONE', 'NONE', 'NONE', 'NONE', s:id)
+call s:HL('jsxTagName', 'NONE', 'NONE', s:b, 'NONE', s:arg)
 
 " TypeScript
 call s:HL('typescriptAssign', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
@@ -216,84 +216,89 @@ call s:HL('graphqlName', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 " YAML
 call s:HL('yamlAlias', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
 call s:HL('yamlAnchor', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
+call s:HL('yamlBlockMappingKey', 204, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('yamlDocumentHeader', 11, 'NONE', 'NONE', 'NONE', s:str)
 call s:HL('yamlKey', 204, 'NONE', 'NONE', 'NONE', s:word)
-call s:HL('yamlBlockMappingKey', 204, 'NONE', s:i, 'NONE', s:arg)
 
 " Cascading Style Sheets
+call s:HL('cssAtKeyword', 155, 'NONE', s:i, 'NONE', s:word)
+call s:HL('cssAtRule', 155, 'NONE', s:i, 'NONE', s:word)
 call s:HL('cssBraces', 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL('cssClassName', 155, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('cssClassNameDot', 155, 'NONE', 'NONE', 'NONE', s:arg)
-call s:HL('cssCustomProp', 155, 'NONE', 'NONE', 'NONE', s:var)
-call s:HL('cssAtRule', 155, 'NONE', s:i, 'NONE', s:word)
-call s:HL('cssAtKeyword', 155, 'NONE', s:i, 'NONE', s:word)
-call s:HL('cssDefinition', 155, 'NONE', s:i, 'NONE', s:word)
-call s:HL('cssTagName', 155, 'NONE', 'NONE', 'NONE', s:word)
-call s:HL('cssUnitDecorators', 155, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('cssColor', 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:HL('cssCommonAttr', 81, 'NONE', 'NONE', 'NONE', s:arg)
-call s:HL('cssProp', 81, 'NONE', 'NONE', 'NONE', s:prop)
-call s:HL('cssMediaProp', 81, 'NONE', 'NONE', 'NONE', s:prop)
+call s:HL('cssCustomProp', 155, 'NONE', 'NONE', 'NONE', s:var)
+call s:HL('cssDefinition', 155, 'NONE', s:i, 'NONE', s:word)
 call s:HL('cssFunctionName', 81, 'NONE', 'NONE', 'NONE', s:id2)
 call s:HL('cssIdentifier', 81, 'NONE', s:i, 'NONE', s:id2)
+call s:HL('cssMediaProp', 81, 'NONE', 'NONE', 'NONE', s:prop)
+call s:HL('cssProp', 81, 'NONE', 'NONE', 'NONE', s:prop)
 call s:HL('cssPseudoClassId', 155, 'NONE', 'NONE', 'NONE', s:type)
+call s:HL('cssTagName', 155, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('cssURL', 208, 'NONE', 'NONE', 'NONE', s:str2)
+call s:HL('cssUnitDecorators', 155, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('cssValueLength', 141, 'NONE', 'NONE', 'NONE', s:int)
 
 " Sass (SCSS)
-call s:HL('scssImport', 155, 'NONE', s:i, 'NONE', s:word)
-call s:HL('scssVariable', 155, 'NONE', s:i, 'NONE', s:id)
-call s:HL('scssSelectorName', 155, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('scssDefinition', 81, 'NONE', s:i, 'NONE', s:word)
+call s:HL('scssImport', 155, 'NONE', s:i, 'NONE', s:word)
+call s:HL('scssSelectorName', 155, 'NONE', s:i, 'NONE', s:arg)
+call s:HL('scssVariable', 155, 'NONE', s:i, 'NONE', s:id)
 
 " Indented Sass
-call s:HL('sassMedia', 155, 'NONE', s:i, 'NONE', s:word)
 call s:HL('sassClass', 155, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('sassId', 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL('sassIdChar', 81, 'NONE', s:i, 'NONE', s:id2)
+call s:HL('sassMedia', 155, 'NONE', s:i, 'NONE', s:word)
 
 " PHP
-call s:HL('phpInclude', 81, 'NONE', s:i, 'NONE', s:word)
-call s:HL('phpFunction', 81, 'NONE', s:b, 'NONE', s:id)
-call s:HL('phpFunctions', 81, 'NONE', s:b, 'NONE', s:arg)
-call s:HL('phpStaticClasses', 81, 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL('phpClass', 81, 'NONE', s:b, 'NONE', s:title)
 call s:HL('phpClassImplements', 81, 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL('phpFunction', 81, 'NONE', s:b, 'NONE', s:id)
+call s:HL('phpFunctions', 81, 'NONE', s:b, 'NONE', s:arg)
+call s:HL('phpInclude', 81, 'NONE', s:i, 'NONE', s:word)
 call s:HL('phpMethodsVar', 81, 'NONE', 'NONE', 'NONE', s:prop)
+call s:HL('phpStaticClasses', 81, 'NONE', 'NONE', 'NONE', s:arg)
 
 " Python
+call s:HL('pythonBuiltinObj', 155, 'NONE', s:i, 'NONE', s:arg)
+call s:HL('pythonClassVar', 155, 'NONE', s:b, 'NONE', s:id)
 call s:HL('pythonImport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
-call s:HL('pythonClassVar', 155, 'NONE', s:i, 'NONE', s:type)
+
+"Django
+call s:HL('djangoTagBlock', 155, 'NONE', 'NONE', 'NONE', s:type)
+call s:HL('djangoVarBlock', 155, 'NONE', 'NONE', 'NONE', s:type)
 
 " C++
-call s:HL('cppStructure', 81, 'NONE', s:i, 'NONE', s:id2)
-call s:HL('cType', 81, 'NONE', s:i, 'NONE', s:id2)
+call s:HL('cBlock', 81, 'NONE', s:i, 'NONE', s:type)
+call s:HL('cInclude', 81, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('cParen', 81, 'NONE', 'NONE', 'NONE', s:other)
 call s:HL('cStructure', 81, 'NONE', s:i, 'NONE', s:word)
-call s:HL('cInclude', 81, 'NONE', 'NONE', 'NONE', s:word)
-call s:HL('cBlock', 81, 'NONE', s:i, 'NONE', s:type)
+call s:HL('cType', 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL('cppSTLvariable', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL('cppStructure', 81, 'NONE', s:i, 'NONE', s:id2)
 
 " Rust
-call s:HL('rustType', 81, 'NONE', s:i, 'NONE', s:type)
 call s:HL('rustIdentifier', 81, 'NONE', s:b, 'NONE', s:id)
+call s:HL('rustType', 81, 'NONE', s:i, 'NONE', s:type)
 
 " Elixir
 call s:HL('elixirAtom', 155, 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL('elixirPseudoVariable', 155, 'NONE', s:i, 'NONE', s:var)
-call s:HL('elixirVariable', 155, 'NONE', s:i, 'NONE', s:var)
 call s:HL('elixirStringDelimiter', 221, 'NONE', 'NONE', 'NONE', s:str)
 call s:HL('elixirTupleDelimiter', 'NONE', 'NONE', 'NONE', 'NONE', s:other)
+call s:HL('elixirVariable', 155, 'NONE', s:i, 'NONE', s:var)
 
 " Shell Script
 call s:HL('bashStatement', 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL('shStatement', 81, 'NONE', s:i, 'NONE', s:id2)
 
 " Vim Script
-call s:HL('vimUserFunc', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('vimIsCommand', 81, 'NONE', s:i, 'NONE', s:arg)
+call s:HL('vimUserFunc', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('vimVar', 81, 'NONE', s:i, 'NONE', s:var)
 
 " Help
-call s:HL('helpExample', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('helpCommand', 81, 'NONE', s:i, 'NONE', s:word)
+call s:HL('helpExample', 81, 'NONE', s:i, 'NONE', s:arg)
