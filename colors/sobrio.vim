@@ -263,7 +263,9 @@ call s:HL('phpStaticClasses', 81, 'NONE', 'NONE', 'NONE', s:arg)
 
 " Python
 call s:HL('pythonBuiltinObj', 155, 'NONE', s:i, 'NONE', s:arg)
-call s:HL('pythonClassVar', 155, 'NONE', s:b, 'NONE', s:id)
+call s:HL('pythonBuiltinType', 155, 'NONE', s:i, 'NONE', s:arg)
+call s:HL('pythonBuiltinFunc', 155, 'NONE', s:b, 'NONE', s:id2)
+call s:HL('pythonClassVar', 155, 'NONE', s:i, 'NONE', s:type)
 call s:HL('pythonImport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 
 "Django
@@ -296,6 +298,7 @@ call s:HL('shStatement', 81, 'NONE', s:i, 'NONE', s:id2)
 
 " Vim Script
 call s:HL('vimIsCommand', 81, 'NONE', s:i, 'NONE', s:arg)
+call s:HL('vimContinue', 81, 'NONE', 'NONE', 'NONE', s:muted)
 call s:HL('vimUserFunc', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:HL('vimVar', 81, 'NONE', s:i, 'NONE', s:var)
 
