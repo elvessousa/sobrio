@@ -50,6 +50,7 @@ let s:word = '#aa0029'
 let s:b = 'bold'
 let s:i = 'italic'
 let s:u = 'underline'
+let s:uc = 'undercurl'
 
 " Set highlight colors function
 function s:HL(scope, ...)
@@ -105,6 +106,8 @@ call s:HL('Search', 16, 11, 'NONE', s:str, s:darkest)
 call s:HL('SignColumn', 'NONE', 237, 'NONE', s:bg, 'NONE')
 call s:HL('Special', 81, 'NONE', 'NONE', 'NONE', s:other)
 call s:HL('SpecialKey', 59, 237, 'NONE', s:accent, s:other)
+call s:HL('SpellBad', 59, 237, s:uc, 'NONE', s:warn)
+call s:HL('SpellCap', 59, 237, s:uc, 'NONE', s:str2)
 call s:HL('Statement', 204, 'NONE', s:i, 'NONE', s:word)
 call s:HL('StatusLine' , 231, 241, s:b, s:splits, s:lightest)
 call s:HL('StatusLineNC' , 231, 241, 'NONE', s:splits, s:lightest)
