@@ -22,7 +22,7 @@ let s:darker = '#f0f0f0'
 let s:darkest = '#202020'
 let s:fold = '#eeeeee'
 let s:hover = '#eeeeee'
-let s:lightest = "#ffffff"
+let s:lightest = '#ffffff'
 let s:lineNumber = '#dddddd'
 let s:menu = '#dddddd'
 let s:splits = '#eeeeee'
@@ -42,7 +42,7 @@ let s:str = '#6787af'
 let s:str2 = '#5fafaf'
 let s:title = '#121212'
 let s:type = '#5f5f5f'
-let s:var = '#9787af'
+let s:var = '#4e4e4e'
 let s:warn = '#aa0029'
 let s:word = '#aa0029'
 
@@ -174,6 +174,7 @@ call s:HL('mkdLink', 'NONE', 'NONE', s:u, 'NONE', s:str2)
 call s:HL('mkdRule', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
 
 " JavaScript
+call s:HL('jsArrowFunction', 81, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('jsExport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('jsFunction', 81, 'NONE', s:i, 'NONE', s:word)
 call s:HL('jsImport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)

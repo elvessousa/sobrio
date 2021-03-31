@@ -173,6 +173,7 @@ call s:HL('mkdLink', 'NONE', 'NONE', s:u, 'NONE', s:str2)
 call s:HL('mkdRule', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
 
 " JavaScript
+call s:HL('jsArrowFunction', 81, 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('jsExport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('jsFunction', 81, 'NONE', s:i, 'NONE', s:word)
 call s:HL('jsImport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
