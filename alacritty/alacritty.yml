@@ -1,0 +1,31 @@
+# Sobrio colors for Alacrity Terminal
+# Author: Elves Sousa <elvessousa.com.br>
+# Copy or append these values to your alacritty.yml file
+colors:
+  # Default colors
+  primary:
+    background: "#202020"
+    foreground: "#eeeeee"
+
+  # Normal colors
+  normal:
+    black: "#3a3b3f"
+    red: "#fd6389"
+    green: "#84afd7"
+    yellow: "#d7af87"
+    blue: "#d7af87"
+    magenta: "#d7d7ff"
+    cyan: "#78dce8"
+    white: "#eeeeee"
+
+  # Bright colors
+  bright:
+    black: "#727072"
+    red: "#fd6399"
+    green: "#d7d7ff"
+    yellow: "#d7af10"
+    blue: "#d7af10"
+    magenta: "#d7d7ff"
+    cyan: "#7cdce7"
+    white: "#ffffff"
+
