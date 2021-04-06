@@ -29,8 +29,8 @@ let s:splits = '#eeeeee'
 let s:visual = '#dddddd'
 
 " Syntax highlight colors
-let s:arg = '#bb3300'
-let s:dir = '#bb3300'
+let s:arg = '#af875f'
+let s:dir = '#af875f'
 let s:file = '#4e4e4e'
 let s:id = '#303030'
 let s:id2 = '#5fafaf'
@@ -43,8 +43,8 @@ let s:str2 = '#5fafaf'
 let s:title = '#121212'
 let s:type = '#5f5f5f'
 let s:var = '#4e4e4e'
-let s:warn = '#aa0029'
-let s:word = '#aa0029'
+let s:warn = '#dd4c4f'
+let s:word = '#dd4c4f'
 
 " Text format
 let s:b = 'bold'
