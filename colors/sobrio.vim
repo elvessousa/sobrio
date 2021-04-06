@@ -182,6 +182,8 @@ call s:HL('jsTemplateExpression', 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 call s:HL('jsVariableDef', 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 
 " JSX
+call s:HL('jsParens', 'NONE', 'NONE', 'NONE', 'NONE', s:other)
+call s:HL('jsFuncParens', 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL('jsxBraces', 'NONE', 'NONE', 'NONE', 'NONE', s:id)
 call s:HL('jsxClosePunct', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL('jsxCloseString', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
