@@ -134,6 +134,10 @@ call s:HL('netrwSlash', 231, 204, 'NONE', s:bg, s:bg)
 call s:HL('netrwSymLink', 231, 204, s:i, 'NONE', s:id2)
 call s:HL('netrwTreeBar', 231, 204, 'NONE', 'NONE', s:bg)
 
+" NERDTree File Browser
+call s:HL('NERDTreeDirSlash', 231, 204, 'NONE', 'NONE', s:muted)
+call s:HL('NERDTreeFlags', 231, 204, 'NONE', 'NONE', s:arg)
+
 " Diffs
 call s:HL('DiffAdd', 231, 155, s:b, 'NONE', s:arg)
 call s:HL('DiffChange', 'NONE', 'NONE', 'NONE', 'NONE', s:str2)
