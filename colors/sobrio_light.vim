@@ -199,6 +199,7 @@ call s:HL('jsxTag', 'NONE', 'NONE', 'NONE', 'NONE', s:id)
 call s:HL('jsxTagName', 'NONE', 'NONE', s:b, 'NONE', s:arg)
 
 " TypeScript
+call s:HL('typescriptArrowFunc', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('typescriptAssign', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('typescriptBinaryOp', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('typescriptBlock', 'NONE', 'NONE', 'NONE', 'NONE', s:title)
@@ -213,6 +214,7 @@ call s:HL('typescriptImport', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('typescriptObjectLabel', 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 call s:HL('typescriptParens', 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL('typescriptTypeReference', 'NONE', 'NONE', s:i, 'NONE', s:type)
+call s:HL('typescriptUnaryOp', 'NONE', 'NONE', 'NONE', 'NONE', s:word)
 call s:HL('typescriptVariable', 'NONE', 'NONE', s:i, 'NONE', s:id2)
 call s:HL('typescriptVariableDeclaration', 'NONE', 'NONE', 'NONE', 'NONE', s:var)
 
