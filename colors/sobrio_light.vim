@@ -302,6 +302,7 @@ call s:HL('cppSTLvariable', 'NONE', 'NONE', 'NONE', 'NONE', s:arg)
 call s:HL('cppStructure', 81, 'NONE', s:i, 'NONE', s:id2)
 
 " Rust
+call s:HL('rustAttribute', 81, 'NONE', 'NONE', 'NONE', s:type)
 call s:HL('rustIdentifier', 81, 'NONE', s:b, 'NONE', s:id)
 call s:HL('rustType', 81, 'NONE', s:i, 'NONE', s:type)
 
