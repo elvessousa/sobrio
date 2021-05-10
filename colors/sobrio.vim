@@ -312,6 +312,9 @@ call s:HL('elixirStringDelimiter', 221, 'NONE', 'NONE', 'NONE', s:str)
 call s:HL('elixirTupleDelimiter', 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL('elixirVariable', 155, 'NONE', s:i, 'NONE', s:var)
 
+" Ruby
+call s:HL('rubySymbol', 155, 'NONE', 'NONE', 'NONE', s:arg)
+
 " Shell Script
 call s:HL('bashStatement', 81, 'NONE', s:i, 'NONE', s:id2)
 call s:HL('shStatement', 81, 'NONE', s:i, 'NONE', s:id2)
