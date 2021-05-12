@@ -313,7 +313,10 @@ call s:HL('elixirTupleDelimiter', 'NONE', 'NONE', 'NONE', 'NONE', s:other)
 call s:HL('elixirVariable', 155, 'NONE', s:i, 'NONE', s:var)
 
 " Ruby
+call s:HL('rubyBlockParameterList', 155, 'NONE', 'NONE', 'NONE', s:var)
+call s:HL('rubyInstanceVariable', 155, 'NONE', 'NONE', 'NONE', s:id2)
 call s:HL('rubySymbol', 155, 'NONE', 'NONE', 'NONE', s:arg)
+call s:HL('rubyCurlyBlockDelimiter', 155, 'NONE', 'NONE', 'NONE', s:other)
 
 " Shell Script
 call s:HL('bashStatement', 81, 'NONE', s:i, 'NONE', s:id2)
