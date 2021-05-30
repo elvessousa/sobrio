@@ -340,6 +340,7 @@ call s:link('elixirID', 'Normal')
 call s:link('elixirListDelimiter', 'Special')
 call s:link('elixirMapDelimiter', 'Special')
 call s:link('elixirPseudoVariable', 'elixirVariable')
+call s:link('elixirSelf', 'Type')
 call s:link('elixirStringDelimiter', 'String')
 call s:link('elixirTupleDelimiter', 'Special')
 
