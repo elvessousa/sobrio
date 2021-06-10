@@ -182,6 +182,7 @@ call s:create('mkdBold', 'NONE', 'NONE', s:b, 'NONE', s:muted)
 call s:create('mkdHeading', 'NONE', 'NONE', 'NONE', 'NONE', s:type)
 call s:create('mkdLink', 'NONE', 'NONE', s:u, 'NONE', s:str2)
 call s:create('mkdRule', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
+call s:link('mkdBlockquote', 'Function')
 call s:link('mkdItalic', 'mkdBold')
 
 " JavaScript
