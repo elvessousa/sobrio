@@ -247,7 +247,7 @@ call s:link('typescriptVariableDeclaration', 'Label')
 
 " JSON
 call s:link('jsonKeyword', 'PreProc')
-call s:link('jsonQuote', 'Special')
+call s:link('jsonQuote', 'Comment')
 call s:link('jsonString', 'Normal')
 
 " GraphQL
@@ -332,7 +332,10 @@ call s:link('cppStructure', 'cType')
 
 " Rust
 call s:create('rustAttribute', 81, 'NONE', 'NONE', 'NONE', s:type)
+call s:link('rustEnumVariant', 'Type')
+call s:link('rustFoldBraces', 'Special')
 call s:link('rustIdentifier', 'Function')
+call s:link('rustSigil', 'Operator')
 call s:link('rustType', 'Type')
 
 " Elixir
