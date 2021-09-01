@@ -292,6 +292,14 @@ call s:link('scssImport', 'Keyword')
 call s:link('scssSelectorName', 'cssClassName')
 call s:link('scssVariable', 'Identifier')
 
+" Less
+
+call s:link('lessInclude', 'Keyword')
+call s:link('lessClass', 'cssClassName')
+call s:link('lessId', 'cssIdentifier')
+call s:link('lessIdChar', 'cssIdentifier')
+
+
 " Indented Sass
 call s:link('sassClass', 'cssClassName')
 call s:link('sassId', 'cssIdentifier')
