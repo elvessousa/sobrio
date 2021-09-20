@@ -1,7 +1,7 @@
 " Vim color file
 " Author: Elves Sousa
 " Website: elvessousa.com.br
-" Colorscheme Name: elf_sobrio_light
+" Colorscheme Name: elf_sobrio_verde_light
 " Inspired by https://www.monokai.pro/
 
 set background=dark
@@ -12,7 +12,7 @@ if exists('syntax_on')
 endif
 
 set t_Co=256
-let g:colors_name = 'sobrio_light'
+let g:colors_name = 'sobrio_verde_light'
 
 " Color palette
 " Interface
@@ -44,7 +44,7 @@ let s:title = '#121212'
 let s:type = '#5f5f5f'
 let s:var = '#4e4e4e'
 let s:warn = '#dd4c4f'
-let s:word = '#dd4c4f'
+let s:word = '#2ec27e'
 
 " Text format
 let s:b = 'bold'

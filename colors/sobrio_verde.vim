@@ -2,7 +2,7 @@
 " Vim color file
 " Author: Elves Sousa
 " Website: https://elvessousa.com.br
-" Colorscheme Name: sobrio
+" Colorscheme Name: sobrio_verde
 
 set background=dark
 highlight clear
@@ -12,7 +12,7 @@ if exists('syntax_on')
 endif
 
 set t_Co=256
-let g:colors_name = 'sobrio'
+let g:colors_name = 'sobrio_verde'
 
 " Color palette
 " Interface
@@ -217,6 +217,7 @@ call s:link('jsxExpressionBlock', 'Normal')
 call s:link('jsxOpenPunct', 'PreProc')
 
 " TypeScript
+call s:link('typescriptAmbientDeclaration', 'Keyword')
 call s:link('typescriptArray', 'Label')
 call s:link('typescriptArrowFunc', 'Operator')
 call s:link('typescriptAssign', 'Keyword')
@@ -235,6 +236,7 @@ call s:link('typescriptFuncComma', 'Special')
 call s:link('typescriptIdentifierName', 'Identifier')
 call s:link('typescriptImport', 'Operator') 
 call s:link('typescriptKeywordOp', 'Keyword')
+call s:link('typescriptModule', 'StorageClass')
 call s:link('typescriptObjectLabel', 'Label')
 call s:link('typescriptObjectSpread', 'Operator')
 call s:link('typescriptOperator', 'Operator')
