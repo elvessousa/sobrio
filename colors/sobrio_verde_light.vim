@@ -326,6 +326,7 @@ call s:link('pythonClassVar', 'Type')
 call s:link('pythonImport', 'Operator')
 
 "Django
+call s:link('djangoStatement', 'Type')
 call s:link('djangoTagBlock', 'Special')
 call s:link('djangoVarBlock', 'Label')
 
