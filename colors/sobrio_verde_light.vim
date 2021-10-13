@@ -326,8 +326,8 @@ call s:link('pythonClassVar', 'Type')
 call s:link('pythonImport', 'Operator')
 
 "Django
-call s:link('djangoTagBlock', 'Label')
-call s:link('djangoVarBlock', 'djangoTagBlock')
+call s:link('djangoTagBlock', 'Special')
+call s:link('djangoVarBlock', 'Label')
 
 " C++
 call s:link('cBlock', 'Type')
