@@ -370,6 +370,7 @@ call s:link('rubySymbol', 'PreProc')
 
 " Shell Script
 call s:link('bashStatement','StorageClass')
+call s:link('shLoop', 'Keyword')
 call s:link('shStatement', 'bashStatement')
 
 " Vim Script
