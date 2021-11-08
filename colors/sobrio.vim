@@ -30,6 +30,7 @@ let s:visual = '#4e4e4e'
 " Syntax highlight colors
 let s:arg = '#d7af87'
 let s:dir = '#d7af87'
+let s:exec = '#2ec27e'
 let s:file = '#cccccc'
 let s:id = '#ffffff'
 let s:id2 = '#7cdce7'
@@ -79,6 +80,7 @@ call s:create('Boolean', 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:create('Character', 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:create('ColorColumn' , 'NONE', 237, 'NONE', s:accent, 'NONE')
 call s:create('Comment', 242, 'NONE', s:i, 'NONE', s:muted)
+call s:create('Conceal', 204, 'NONE', s:uc, 'NONE', s:other)
 call s:create('Conditional', 204, 'NONE', s:i, 'NONE', s:word)
 call s:create('Constant', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
 call s:create('Cursor' , 231, 231, 'NONE', s:lightest, s:lightest)
@@ -140,13 +142,14 @@ call s:link('netrwExe', 'Define')
 call s:link('netrwSymLink', 'StorageClass')
 
 " NERDTree File Browser
+call s:create('NERDTreeExecFile', 231, 155, s:b, 'NONE', s:exec)
 call s:link('NERDTreeCWD', 'Comment')
 call s:link('NERDTreeDirSlash', 'Comment')
 call s:link('NERDTreeFlags', 'PreProc')
 call s:link('NERDTreeFile', 'netrwPlain')
 
 " Diffs
-call s:create('DiffAdd', 231, 155, s:b, 'NONE', s:arg)
+call s:create('DiffAdd', 231, 155, s:b, 'NONE', s:exec)
 call s:create('DiffChange', 'NONE', 'NONE', 'NONE', 'NONE', s:str2)
 call s:create('DiffDelete', 204, 'NONE', 'NONE', 'NONE', s:warn)
 call s:create('DiffText', 231, 24, s:b, s:id, s:lightest)

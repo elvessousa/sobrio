@@ -31,6 +31,7 @@ let s:visual = '#dddddd'
 " Syntax highlight colors
 let s:arg = '#af875f'
 let s:dir = '#af875f'
+let s:exec = '#2ec27e'
 let s:file = '#4e4e4e'
 let s:id = '#303030'
 let s:id2 = '#5fafaf'
@@ -80,6 +81,7 @@ call s:create('Boolean', 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:create('Character', 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:create('ColorColumn' , 'NONE', 237, 'NONE', s:accent, 'NONE')
 call s:create('Comment', 242, 'NONE', s:i, 'NONE', s:muted)
+call s:create('Conceal', 204, 'NONE', s:uc, 'NONE', s:other)
 call s:create('Conditional', 204, 'NONE', s:i, 'NONE', s:word)
 call s:create('Constant', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
 call s:create('Cursor' , 231, 231, 'NONE', s:lightest, s:darkest)
@@ -141,6 +143,7 @@ call s:link('netrwExe', 'Define')
 call s:link('netrwSymLink', 'StorageClass')
 
 " NERDTree File Browser
+call s:create('NERDTreeExecFile', 231, 155, s:b, 'NONE', s:exec)
 call s:link('NERDTreeCWD', 'Comment')
 call s:link('NERDTreeDirSlash', 'Comment')
 call s:link('NERDTreeFlags', 'PreProc')
