@@ -149,4 +149,4 @@ If you want to make your default Airline theme, add this to your `init.vim`:
 let g:airline_theme='sobrio'
 ```
 
-Take cake!
+Take care!
