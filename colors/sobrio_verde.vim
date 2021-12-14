@@ -347,7 +347,7 @@ call s:link('cppStructure', 'cType')
 
 " Rust
 call s:create('rustAttribute', 81, 'NONE', 'NONE', 'NONE', s:type)
-call s:link('rustEnumVariant', 'Type')
+call s:link('rustEnumVariant', 'Identifier')
 call s:link('rustFoldBraces', 'Special')
 call s:link('rustIdentifier', 'Function')
 call s:link('rustSelf', 'Type')
