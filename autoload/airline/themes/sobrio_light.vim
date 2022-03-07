@@ -12,18 +12,18 @@ let g:airline#themes#sobrio_light#palette = {}
 " Status bar accents colors
 let s:Accents = ['#aa0029', '', 160, '']
 let s:Command = ['#ffffff', '#5fafaf', 17, 40]
-let s:Inactive = ['#afafaf', '#eeeeee', 239, 234, '']
+let s:Inactive = ['#afafaf', '#eeeeee', 239, 234]
 let s:Insert = ['#ffffff', '#aa0029', 17, 45]
-let s:InsertPaste = [s:Insert[0], '#d78700', s:Insert[2], 172, '']
+let s:InsertPaste = [s:Insert[0], '#d78700', s:Insert[2], 172]
 let s:Normal = ['#000000', '#d7af87', 17, 190]
-let s:Replace = [s:Insert[0], '#aa0029', s:Insert[2] , 124, '']
+let s:Replace = [s:Insert[0], '#aa0029', s:Insert[2] , 124]
 let s:Visual = ['#ffffff', '#87afd7', 232, 214]
 
 " Modified file status test
-let s:ModifiedI = ['#aa0029', '#ffffff', 255, 53, ''] 
-let s:ModifiedIn = ['#cccccc' , '' , 97 , '' , '']
-let s:ModifiedN = ['#d7af87', '#ffffff', 255, 53, ''] 
-let s:ModifiedV = ['#87afd7', '#ffffff', 255, 53, ''] 
+let s:ModifiedI = ['#aa0029', '#ffffff', 255, 53] 
+let s:ModifiedIn = ['#cccccc' , '' , 97 , '']
+let s:ModifiedN = ['#d7af87', '#ffffff', 255, 53] 
+let s:ModifiedV = ['#87afd7', '#ffffff', 255, 53] 
 
 " Other status bar colors
 let s:FileInactive = ['#cccccc', '#ffffff', 85, 234]
