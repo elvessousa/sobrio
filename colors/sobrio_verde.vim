@@ -379,10 +379,15 @@ call s:link('bashStatement','StorageClass')
 call s:link('shLoop', 'Keyword')
 call s:link('shStatement', 'bashStatement')
 
+" SQL
+call s:link('sqlKeyword', 'Keyword')
+call s:link('sqlOperator', 'StorageClass')
+
 " Vim Script
 call s:create('vimContinue', 81, 'NONE', 'NONE', 'NONE', s:muted)
 call s:create('vimIsCommand', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:create('vimVar', 81, 'NONE', s:i, 'NONE', s:var)
+call s:link('vimFunc', 'vimIsCommand')
 call s:link('vimUserFunc', 'vimIsCommand')
 
 " Help
