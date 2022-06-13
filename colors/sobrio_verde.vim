@@ -393,3 +393,6 @@ call s:link('vimUserFunc', 'vimIsCommand')
 " Help
 call s:create('helpExample', 81, 'NONE', s:i, 'NONE', s:arg)
 call s:link('helpCommand', 'Keyword')
+
+" CoC
+call s:link('CocHintSign', 'Comment')
