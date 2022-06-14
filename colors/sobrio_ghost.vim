@@ -393,3 +393,4 @@ call s:link('helpCommand', 'Keyword')
 
 " CoC
 call s:link('CocHintSign', 'Comment')
+call s:link('FgCocHintFloatBgCocFloating', 'Type')
