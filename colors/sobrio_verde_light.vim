@@ -135,6 +135,7 @@ call s:create('WarningMsg', 231, 204, 'NONE', s:warn, s:lightest)
 
 " TreeSitter
 call s:create('TSContructor', 204, 'NONE', s:b, 'NONE', s:id2)
+call s:create('TSFuncBuiltin', 204, 'NONE', s:b, 'NONE', s:arg)
 call s:create('TSSymbol', 204, 'NONE', s:i, 'NONE', s:arg)
 call s:link('TSConstBuiltin', 'Identifier')
 call s:link('TSInclude', 'Tag')
