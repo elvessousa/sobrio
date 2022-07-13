@@ -359,6 +359,7 @@ call s:link('phpInclude', 'Keyword')
 call s:link('phpMethod', 'Function')
 call s:link('phpMethodsVar', 'Label')
 call s:link('phpStaticClasses', 'PreProc')
+call s:link('phpTSConstructor', 'TSContructor')
 
 " Python
 call s:create('pythonBuiltinFunc', 155, 'NONE', s:b, 'NONE', s:id2)
