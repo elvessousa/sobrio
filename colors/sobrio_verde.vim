@@ -205,7 +205,7 @@ call s:link('mkdBlockquote', 'Function')
 call s:link('mkdItalic', 'mkdBold')
 
 " JavaScript
-call s:link('javascriptTSConstructor', 'Identifier')
+call s:link('javascriptTSConstructor', 'TSContructor')
 call s:link('javascriptTSKeyword', 'StorageClass')
 call s:link('javascriptTSVariable', 'Label')
 call s:link('jsArrowFunction', 'Operator')
@@ -241,11 +241,12 @@ call s:link('jsxExpressionBlock', 'Normal')
 call s:link('jsxOpenPunct', 'PreProc')
 
 " TypeScript
-call s:link('tsxTSConstructor', 'Identifier')
+call s:link('tsxTSConstructor', 'TSContructor')
 call s:link('tsxTSKeyword', 'StorageClass')
 call s:link('tsxTSTag', 'jsxTagName')
 call s:link('tsxTSTagAttribute', 'Type')
 call s:link('tsxTSTagDelimiter', 'PreProc')
+call s:link('tsxTSVariable', 'Label')
 call s:link('typescriptAmbientDeclaration', 'Keyword')
 call s:link('typescriptArray', 'Label')
 call s:link('typescriptArrowFunc', 'Operator')
