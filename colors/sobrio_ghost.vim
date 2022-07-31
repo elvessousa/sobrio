@@ -143,7 +143,9 @@ call s:link('TSParameter', 'TSSymbol')
 call s:link('TSTag', 'Tag')
 call s:link('TSTagAttribute', 'TSSymbol')
 call s:link('TSTagDelimiter', 'Operator')
+call s:link('TSTextReference', 'TSSymbol')
 call s:link('TSTitle', 'Tag')
+call s:link('TSURI', 'String')
 call s:link('TSVariableBuiltin', 'Type')
 
 "  Netrw File Browser
