@@ -23,7 +23,7 @@ let s:fold = '#262626'
 let s:hover = '#5f5f5f'
 let s:lightest = '#ffffff'
 let s:lineNumber = '#333333'
-let s:menu = '#303030'
+let s:menu = '#121212'
 let s:splits = '#303030'
 let s:visual = '#4e4e4e'
 
