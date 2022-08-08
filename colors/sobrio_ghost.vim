@@ -15,16 +15,16 @@ let g:colors_name = 'sobrio'
 
 " Color palette
 " Interface
-let s:accent = '#121212'
+let s:accent = '#080808'
 let s:bg = 'NONE'
 let s:darker = '#121212'
 let s:darkest = '#000000'
 let s:fold = '#262626'
 let s:hover = '#5f5f5f'
 let s:lightest = '#ffffff'
-let s:lineNumber = '#333333'
+let s:lineNumber = '#181818'
 let s:menu = '#121212'
-let s:splits = '#303030'
+let s:splits = '#121212'
 let s:visual = '#4e4e4e'
 
 " Syntax highlight colors
