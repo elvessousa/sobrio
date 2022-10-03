@@ -133,7 +133,7 @@ call s:create('Visual' , 'NONE', 239, 'NONE', s:visual, 'NONE')
 call s:create('WarningMsg', 231, 204, 'NONE', s:warn, s:lightest)
 
 " TreeSitter
-call s:create('TSContructor', 204, 'NONE', s:b, 'NONE', s:id2)
+call s:create('TSConstructor', 204, 'NONE', s:b, 'NONE', s:id2)
 call s:create('TSFuncBuiltin', 204, 'NONE', s:b, 'NONE', s:arg)
 call s:create('TSSymbol', 204, 'NONE', s:i, 'NONE', s:arg)
 call s:link('TSConstBuiltin', 'Identifier')
@@ -148,8 +148,9 @@ call s:link('TSTextReference', 'TSSymbol')
 call s:link('TSTitle', 'Tag')
 call s:link('TSURI', 'String')
 call s:link('TSVariableBuiltin', 'Type')
+" call s:link('constructor', 'TSContructor')
 
-"  Netrw File Browser
+" Netrw File Browser
 call s:create('netrwClassify', 231, 204, 'NONE', 'NONE', s:lineNumber)
 call s:create('netrwLink', 231, 204, 'NONE', 'NONE', s:muted)
 call s:create('netrwPlain', 242, 'NONE', 'NONE', 'NONE', s:file)
