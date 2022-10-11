@@ -301,6 +301,8 @@ call s:link('graphqlTaggedTemplate', 'String')
 call s:link('graphqlTSProperty', 'TSSymbol')
 
 " YAML
+call s:link('@field.yaml', 'TSSymbol')
+call s:link('@string.yaml', 'Normal')
 call s:link('yamlAlias', 'Normal')
 call s:link('yamlAnchor', 'Normal')
 call s:link('yamlBlockMappingKey', 'TSSymbol')

@@ -148,7 +148,6 @@ call s:link('TSTextReference', 'TSSymbol')
 call s:link('TSTitle', 'Tag')
 call s:link('TSURI', 'String')
 call s:link('TSVariableBuiltin', 'Type')
-" call s:link('constructor', 'TSContructor')
 
 " Netrw File Browser
 call s:create('netrwClassify', 231, 204, 'NONE', 'NONE', s:lineNumber)
@@ -301,6 +300,8 @@ call s:link('graphqlTaggedTemplate', 'String')
 call s:link('graphqlTSProperty', 'TSSymbol')
 
 " YAML
+call s:link('@field.yaml', 'TSSymbol')
+call s:link('@string.yaml', 'Normal')
 call s:link('yamlAlias', 'Normal')
 call s:link('yamlAnchor', 'Normal')
 call s:link('yamlBlockMappingKey', 'TSSymbol')
