@@ -246,7 +246,7 @@ call s:link('jsxCloseString', 'PreProc')
 call s:link('jsxExpressionBlock', 'Normal')
 call s:link('jsxOpenPunct', 'PreProc')
 
-" TypeScrip
+" TypeScript
 call s:link('@tag.attribute.tsx', 'Type')
 call s:link('@tag.delimiter.tsx', 'PreProc')
 call s:link('@tag.tsx', 'jsxTagName')
@@ -291,6 +291,8 @@ call s:link('typescriptVariable', 'StorageClass')
 call s:link('typescriptVariableDeclaration', 'Label')
 
 " JSON
+call s:link('@label.json', 'PreProc')
+call s:link('@string.json', 'Normal')
 call s:link('jsonKeyword', 'PreProc')
 call s:link('jsonQuote', 'Comment')
 call s:link('jsonString', 'Normal')
