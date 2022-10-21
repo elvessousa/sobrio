@@ -290,8 +290,6 @@ call s:link('typescriptVariable', 'StorageClass')
 call s:link('typescriptVariableDeclaration', 'Label')
 
 " JSON
-call s:link('@label.json', 'PreProc')
-call s:link('@string.json', 'Normal')
 call s:link('jsonKeyword', 'PreProc')
 call s:link('jsonQuote', 'Comment')
 call s:link('jsonString', 'Normal')

@@ -1,8 +1,7 @@
 " Vim color file
 " Author: Elves Sousa
-" Website: elvessousa.com.br
-" Colorscheme Name: elf_sobrio_light
-" Inspired by https://www.monokai.pro/
+" Website: https://elvessousa.com.br
+" Colorscheme Name: sobrio_light
 
 set background=dark
 highlight clear
@@ -19,10 +18,10 @@ let g:colors_name = 'sobrio_light'
 let s:accent = '#afafaf'
 let s:bg = '#ffffff'
 let s:darker = '#f0f0f0'
-let s:darkest = '#202020'
+let s:darkest = '#ffffff'
 let s:fold = '#eeeeee'
 let s:hover = '#eeeeee'
-let s:lightest = '#ffffff'
+let s:lightest = '#202020'
 let s:lineNumber = '#dddddd'
 let s:menu = '#dddddd'
 let s:splits = '#eeeeee'
@@ -103,7 +102,7 @@ call s:create('LineNr' , 102, 235, 'NONE', s:bg, s:lineNumber)
 call s:create('MatchParen' , 11, 'NONE', s:u, 'NONE', s:str)
 call s:create('MsgArea', 231, 235, 'NONE', s:bg, s:other)
 call s:create('NonText', 59, 235, 'NONE', s:fold, s:other)
-call s:create('Normal', 231, 235, 'NONE', s:bg, s:darkest)
+call s:create('Normal', 231, 235, 'NONE', s:bg, s:lightest)
 call s:create('Number', 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:create('Operator', 204, 'NONE', 'NONE', 'NONE', s:word)
 call s:create('Pmenu', 'NONE', 236, 'NONE', s:menu, 'NONE')
@@ -291,8 +290,6 @@ call s:link('typescriptVariable', 'StorageClass')
 call s:link('typescriptVariableDeclaration', 'Label')
 
 " JSON
-call s:link('@label.json', 'PreProc')
-call s:link('@string.json', 'Normal')
 call s:link('jsonKeyword', 'PreProc')
 call s:link('jsonQuote', 'Comment')
 call s:link('jsonString', 'Normal')

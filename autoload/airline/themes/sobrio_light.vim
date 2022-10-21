@@ -2,7 +2,7 @@
 " Vim Airline Theme: Sobrio Light
 " Author: Elves Sousa
 " Website: https://elvessousa.com.br
-" Copyright (c) 2013-2021 Elves Sousa.
+" Copyright (c) 2013-2022 Elves Sousa.
 " MIT License
 
 scriptencoding utf-8

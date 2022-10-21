@@ -1,7 +1,7 @@
 " Vim color file
 " Author: Elves Sousa
 " Website: https://elvessousa.com.br
-" Colorscheme Name: sobrio
+" Colorscheme Name: sobrio_ghost
 
 set background=dark
 highlight clear
@@ -149,7 +149,7 @@ call s:link('TSTitle', 'Tag')
 call s:link('TSURI', 'String')
 call s:link('TSVariableBuiltin', 'Type')
 
-" Netrw File Browser
+"  Netrw File Browser
 call s:create('netrwClassify', 231, 204, 'NONE', 'NONE', s:lineNumber)
 call s:create('netrwLink', 231, 204, 'NONE', 'NONE', s:muted)
 call s:create('netrwPlain', 242, 'NONE', 'NONE', 'NONE', s:file)
@@ -290,8 +290,6 @@ call s:link('typescriptVariable', 'StorageClass')
 call s:link('typescriptVariableDeclaration', 'Label')
 
 " JSON
-call s:link('@label.json', 'PreProc')
-call s:link('@string.json', 'Normal')
 call s:link('jsonKeyword', 'PreProc')
 call s:link('jsonQuote', 'Comment')
 call s:link('jsonString', 'Normal')
