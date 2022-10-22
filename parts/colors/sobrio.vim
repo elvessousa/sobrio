@@ -16,8 +16,9 @@ let g:colors_name = 'sobrio'
 " Color palette
 " Interface
 let s:accent = '#121212'
-let s:bg = '#202020'
-let s:darker = '#121212'
+"let s:bg = '#202020'
+let s:bg = '#121212'
+let s:darker = '#181818'
 let s:darkest = '#000000'
 let s:fold = '#262626'
 let s:hover = '#5f5f5f'
