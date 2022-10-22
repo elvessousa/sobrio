@@ -16,7 +16,6 @@ let g:colors_name = 'sobrio'
 " Color palette
 " Interface
 let s:accent = '#121212'
-"let s:bg = '#202020'
 let s:bg = '#121212'
 let s:darker = '#181818'
 let s:darkest = '#000000'
@@ -90,7 +89,7 @@ call s:create('CursorLine' , 'NONE', 237, 'NONE', s:darker, 'NONE')
 call s:create('CursorLineNr' , 'NONE', 237, 'NONE', 'NONE', s:prop)
 call s:create('Define', 204, 'NONE', s:i, 'NONE', s:word)
 call s:create('Directory', 141, 'NONE', s:b, 'NONE', s:dir)
-call s:create('EndOfBuffer', 231, 235, 'NONE', s:bg, s:bg)
+call s:create('EndOfBuffer', 231, 235, 'NONE', s:bg, s:accent)
 call s:create('ErrorMsg', 231, 204, 'NONE', s:warn, s:lightest)
 call s:create('Float', 141, 'NONE', 'NONE', 'NONE', s:int)
 call s:create('Folded', 242, 235, 'NONE', s:fold, s:muted)

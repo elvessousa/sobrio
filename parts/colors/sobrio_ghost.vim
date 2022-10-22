@@ -11,7 +11,7 @@ if exists('syntax_on')
 endif
 
 set t_Co=256
-let g:colors_name = 'sobrio'
+let g:colors_name = 'sobrio_ghost'
 
 " Color palette
 " Interface
