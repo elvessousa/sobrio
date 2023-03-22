@@ -136,17 +136,6 @@ call s:create('WarningMsg', 231, 204, 'NONE', s:warn, s:lightest)
 call s:create('TSConstructor', 204, 'NONE', s:b, 'NONE', s:id2)
 call s:create('TSFuncBuiltin', 204, 'NONE', s:b, 'NONE', s:arg)
 call s:create('TSSymbol', 204, 'NONE', s:i, 'NONE', s:arg)
-call s:link('@constant', 'Constant')
-call s:link('@constant.builtin', 'Constant')
-call s:link('@constructor', 'TSContructor')
-call s:link('@function.builtin', 'TSFuncBuiltin')
-call s:link('@function.call', 'Function')
-call s:link('@include', 'Tag')
-call s:link('@namespace', 'TSSymbol')
-call s:link('@parameter', 'TSSymbol')
-call s:link('@symbol', 'TSSymbol')
-call s:link('@type.builtin', 'StorageClass')
-call s:link('@variable', 'Label')
 call s:link('TSConstBuiltin', 'Identifier')
 call s:link('TSEmphasis', 'Type')
 call s:link('TSInclude', 'Tag')
@@ -186,7 +175,6 @@ call s:create('DiffText', 231, 24, s:b, s:id, s:lightest)
 call s:create('htmlArg', 'NONE', 'NONE', s:i, 'NONE', s:arg)
 call s:create('htmlBold', 'NONE', 'NONE', s:b, 'NONE', s:type)
 call s:link('htmlEndTag', 'Operator')
-call s:link('@tag.attribute', 'htmlArg')
 call s:link('htmlH1', 'Tag')
 call s:link('htmlH2', 'Tag')
 call s:link('htmlH3', 'Tag')
@@ -217,12 +205,6 @@ call s:create('mkdLink', 'NONE', 'NONE', s:u, 'NONE', s:str2)
 call s:create('mkdRule', 'NONE', 'NONE', 'NONE', 'NONE', s:muted)
 call s:link('mkdBlockquote', 'Function')
 call s:link('mkdItalic', 'mkdBold')
-call s:link('@text.strong', 'Function')
-call s:link('@text.literal', 'String')
-call s:link('@text.uri', 'String')
-call s:link('@text.title', 'Tag')
-call s:link('@text.emphasis', 'Type')
-call s:link('@text.reference', 'mdLink')
 
 " JavaScript
 call s:link('javascriptTSConstructor', 'TSContructor')
@@ -251,9 +233,6 @@ call s:link('jsVariableDef', 'Label')
 call s:create('jsxComponentName', 'NONE', 'NONE', s:b, 'NONE', s:id2)
 call s:create('jsxTag', 'NONE', 'NONE', 'NONE', 'NONE', s:id)
 call s:create('jsxTagName', 'NONE', 'NONE', s:b, 'NONE', s:arg)
-call s:link('@tag.attribute.jsx', 'Type')
-call s:link('@tag.delimiter.jsx', 'PreProc')
-call s:link('@tag.jsx', 'jsxTagName')
 call s:link('javascriptTSTag', 'jsxTagName')
 call s:link('javascriptTSTagAttribute', 'Type')
 call s:link('javascriptTSTagDelimiter', 'PreProc')
@@ -264,9 +243,6 @@ call s:link('jsxExpressionBlock', 'Normal')
 call s:link('jsxOpenPunct', 'PreProc')
 
 " TypeScript
-call s:link('@tag.attribute.tsx', 'Type')
-call s:link('@tag.delimiter.tsx', 'PreProc')
-call s:link('@tag.tsx', 'jsxTagName')
 call s:link('tsxTSConstructor', 'TSContructor')
 call s:link('tsxTSKeyword', 'StorageClass')
 call s:link('tsxTSTag', 'jsxTagName')
@@ -308,8 +284,6 @@ call s:link('typescriptVariable', 'StorageClass')
 call s:link('typescriptVariableDeclaration', 'Label')
 
 " JSON
-call s:link('@label.json', 'PreProc')
-call s:link('@string.json', 'Normal')
 call s:link('jsonKeyword', 'PreProc')
 call s:link('jsonQuote', 'Comment')
 call s:link('jsonString', 'Normal')
@@ -322,8 +296,6 @@ call s:link('graphqlTaggedTemplate', 'String')
 call s:link('graphqlTSProperty', 'TSSymbol')
 
 " YAML
-call s:link('@field.yaml', 'TSSymbol')
-call s:link('@string.yaml', 'Normal')
 call s:link('yamlAlias', 'Normal')
 call s:link('yamlAnchor', 'Normal')
 call s:link('yamlBlockMappingKey', 'TSSymbol')
@@ -333,7 +305,6 @@ call s:link('yamlTSField', 'yamlBlockMappingKey')
 call s:link('yamlTSString', 'Normal')
 
 " TOML
-call s:link('@type.toml', 'TSSymbol')
 call s:link('tomlKey', 'Type')
 call s:link('tomlTSOperator', 'Normal')
 call s:link('tomlTSProperty', 'Type')
@@ -392,8 +363,6 @@ call s:link('phpMethod', 'Function')
 call s:link('phpMethodsVar', 'Label')
 call s:link('phpStaticClasses', 'PreProc')
 call s:link('phpTSConstructor', 'TSContructor')
-call s:link('@constructor.php', 'TSContructor')
-call s:link('@parameter.@variable.php', 'TSSymbol')
 
 " Python
 call s:create('pythonBuiltinFunc', 155, 'NONE', s:b, 'NONE', s:id2)
@@ -449,7 +418,6 @@ call s:link('rubyInstanceVariable', 'Label')
 call s:link('rubySymbol', 'PreProc')
 
 " Shell Script
-call s:link('@function.builtin.bash', 'TSConstructor')
 call s:link('bashStatement', 'StorageClass')
 call s:link('bashTSFuncBuiltin', 'StorageClass')
 call s:link('bashTSVariable', 'Identifier')
@@ -477,3 +445,55 @@ call s:link('helpCommand', 'Keyword')
 " CoC
 call s:link('CocHintSign', 'Comment')
 call s:link('FgCocHintFloatBgCocFloating', 'Type')
+
+" Treesitter
+call s:link('@constant', 'Constant')
+call s:link('@constant.builtin', 'Constant')
+call s:link('@constructor', 'TSContructor')
+call s:link('@function.builtin', 'TSFuncBuiltin')
+call s:link('@function.call', 'Function')
+call s:link('@include', 'Tag')
+call s:link('@namespace', 'TSSymbol')
+call s:link('@parameter', 'TSSymbol')
+call s:link('@symbol', 'TSSymbol')
+call s:link('@type.builtin', 'StorageClass')
+call s:link('@variable', 'Label')
+
+" HTML
+call s:link('@tag.attribute', 'htmlArg')
+
+" Markdown
+call s:link('@text.strong', 'Function')
+call s:link('@text.literal', 'String')
+call s:link('@text.uri', 'String')
+call s:link('@text.title', 'Tag')
+call s:link('@text.emphasis', 'Type')
+call s:link('@text.reference', 'mdLink')
+
+" JSX
+call s:link('@tag.attribute.jsx', 'Type')
+call s:link('@tag.delimiter.jsx', 'PreProc')
+call s:link('@tag.jsx', 'jsxTagName')
+
+" TypeScript
+call s:link('@tag.attribute.tsx', 'Type')
+call s:link('@tag.delimiter.tsx', 'PreProc')
+call s:link('@tag.tsx', 'jsxTagName')
+
+" JSON
+call s:link('@label.json', 'PreProc')
+call s:link('@string.json', 'Normal')
+
+" YAML
+call s:link('@field.yaml', 'TSSymbol')
+call s:link('@string.yaml', 'Normal')
+
+" TOML
+call s:link('@type.toml', 'TSSymbol')
+
+" PHP
+call s:link('@constructor.php', 'TSContructor')
+call s:link('@parameter.@variable.php', 'TSSymbol')
+
+" Shell Script
+call s:link('@function.builtin.bash', 'TSConstructor')

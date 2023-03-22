@@ -13,6 +13,18 @@ for k, t in pairs(themes) do
 
 	local color = files.read(path)
 	local rules = files.read("./parts/rules.vim")
+	local treesitter = files.read("./parts/tree-sitter.vim")
+
+	local fileContent = color .. "\n" .. rules .. "\n" .. treesitter
+	files.write(target, fileContent)
+end
+
+for k, t in pairs(themes) do
+	local path = string.format("./parts/colors/%s.vim", t)
+	local target = string.format("./colors/%s_vim.vim", t)
+
+	local color = files.read(path)
+	local rules = files.read("./parts/rules.vim")
 
 	local fileContent = color .. "\n" .. rules
 	files.write(target, fileContent)
